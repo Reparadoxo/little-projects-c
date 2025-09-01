@@ -7,8 +7,8 @@ int main(){
 	
 	float horas, velocidade, distancia, litros;
 	printf("Digite a duração da viagem em HORAS: ");
-	// input: The amount of time of a travel and the speed of the car.
-	// output: The distance traveled and the amount of gas used in the travel.
+	// input: The amount of time (in hours) of a travel and the speed of the car(in KM per H).
+	// output: The distance traveled(in KM per H) and the amount of gas used in the travel(Liters).
 	scanf("%f", &horas);
 	printf("Digite a velocidade do veículo em KM/H: ");
 	scanf("%f", &velocidade);
@@ -18,4 +18,5 @@ int main(){
 	// Good practices of C programming.
 	return(0);
 }
+
 
