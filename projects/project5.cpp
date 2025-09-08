@@ -3,10 +3,11 @@
 int main() {
 	int numero, novoNumero, tabuadaAux = 1;
 	
-	printf("Digite um número para fazer sua tabuada.");
+	printf("Digite um nÃºmero para fazer sua tabuada.");
 	scanf("%d", &numero);
-	
-	while (tabuadaAux < 11) {
+	//input: A positive number 
+	//output: It's multiplication table until 10
+	while (tabuadaAux <= 10) {
 		novoNumero = numero * tabuadaAux;
 		printf("%d\n", novoNumero);
 		tabuadaAux++;
@@ -14,3 +15,4 @@ int main() {
 	return 0;
 	
 }
+
