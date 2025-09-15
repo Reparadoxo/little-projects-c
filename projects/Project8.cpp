@@ -6,16 +6,16 @@ int main() {
 	setlocale(LC_ALL, "Portuguese");
 	int i;
 	long long int atual, posterior, graos;
-	// Note that "gr„os" (grains) start with the integer 1. 
+	// Note that "gr√£os" (grains) start with the integer 1. 
 	graos = 1;
 	// This variable "Atual" represents the current number of the current zone of the chass board.
 	atual = 1;
 	
 	for (i = 1; i <= 64; i++) {
-		// Here "Posterior" means the next value in the chass zone, plus i sum this value to "Gr„os".
+		// Here "Posterior" means the next value in the chass zone, plus i sum this value to "Gr√£os".
 		posterior = atual * 2;
 		graos += posterior;
-		printf("A quantidade atual %llu e o seu dobro (posterior) %llu e se soma nos gr„os %llu\n", atual, posterior, graos);
+		printf("A quantidade atual %llu e o seu dobro (posterior) %llu e se soma nos gr√£os %llu\n", atual, posterior, graos);
 		// Finally, i attributed the next value to the "Atual" (Current) value.   
 		atual = posterior;
 	}
