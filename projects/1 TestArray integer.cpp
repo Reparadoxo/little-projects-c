@@ -5,23 +5,24 @@
 
 int main() {
 	setlocale(LC_ALL, "portuguese");
-	//Adiciona o valor de várias posições diretamente
+	//Adds the value of multiple positions directly
 	int v[10] = {5, 7, 9, 54, 5};
 	
-	//Leitura do vetor
+	//Reading the array
 	for (int i = 5; i < 10; i++) {
-		printf("Digite um valor da posição %d: ", i);
-		//Usar a variável de controle "i"
+		printf("Digite um valor da posiÃ§Ã£o %d: ", i);
+		//Use the control variable "i"
 		scanf("%d", &v[i]);
 	}
 	
-	//Impressão de um vetor
+	//Printing the array
 	for (int i = 0; i < 10; i++){
-		//Não vai o &
+		//NÃ£o vai o &
 		printf("%d ", v[i]);
 	}
-	//Outra maneira de atribuir um valor individual
+	//Another way to attribute the value in a position
 	v[2] = 87;
 	printf("%d ", v[2]);
 	return 0;
 }
+
