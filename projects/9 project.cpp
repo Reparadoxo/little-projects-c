@@ -1,4 +1,4 @@
-// Construir um programa que leia 10 elementos inteiros em um vetor A. Construir um vetor B de mesmo tipo e dimens„o, em que cada elemento seja o fatorial do elemento correspondente armazenado no vetor A. Apresentar os elementos do vetor B.
+// Construir um programa que leia 10 elementos inteiros em um vetor A. Construir um vetor B de mesmo tipo e dimens√£o, em que cada elemento seja o fatorial do elemento correspondente armazenado no vetor A. Apresentar os elementos do vetor B.
 
 #include <stdio.h>
 #include <locale.h>
@@ -19,7 +19,7 @@ int main() {
     }
 
     for (i = 0; i < 10; i++) {
-        printf("O fatorial de %lld È %lld no Ìndice %d do vetor Fatorial\n", vetorPadrao[i], vetorFatorial[i], i);
+        printf("O fatorial de %lld √© %lld no √≠ndice %d do vetor Fatorial\n", vetorPadrao[i], vetorFatorial[i], i);
     }
 
     return 0;
