@@ -1,11 +1,10 @@
-// Construir um programa que leia 10 elementos inteiros em um vetor A. Construir um vetor B de mesmo tipo e dimensão, em que cada elemento seja o fatorial do elemento correspondente armazenado no vetor A. Apresentar os elementos do vetor B.
-
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
 
 int main() {
     setlocale(LC_ALL, "portuguese");
+    /*This code does the factorial of the numnbers in the "vetorPadrao" and insert the value into "vetorFatorial"*/
     long long int vetorPadrao[10] = {6, 8, 1, 4, 6, 7, 14, 1, 20, 17}, vetorFatorial[10], fatorial;
     int i, j;
 
@@ -24,3 +23,4 @@ int main() {
 
     return 0;
 }
+
