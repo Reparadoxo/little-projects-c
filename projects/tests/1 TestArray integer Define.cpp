@@ -1,13 +1,9 @@
-/*Elaborar um programa que leia um vetor A com 10 elementos
- do tipo inteiro. Construir um vetor B de mesma dimensão e tipo
- do vetor A. O último elemento do vetor A deve ser o primeiro
- elemento do vetor B, e o penúltimo elemento do vetor A deve ser
- o segundo do vetor B até que o primeiro elemento do vetor A seja
- o último do vetor B.*/
 #include <stdio.h>
+/*In this test, i will use define for the limit of the arrays, this trick saves a lot  of time.*/
 #define TAM 10
 
 int main() {
+    /*This algorithim does a replace in the array A's last elements to the first place's in the array B.*/
     int va[TAM], vb[TAM], i, j = TAM - 1;
     printf("digite 10 valores inteiros:");
     for(i=0; i < TAM; i++){
