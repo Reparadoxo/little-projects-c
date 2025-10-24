@@ -1,0 +1,66 @@
+#include <stdio.h>
+#define COL 4
+#define LIN 4
+
+// Function to rotate a matrix 90 degrees clockwise
+void rotacionarMatriz(int matrizA[LIN][COL]) {
+    int matrizTemp[LIN][COL], i, j;
+
+    // Loop through each element of the original matrix
+    for (i = 0; i < LIN; i++) {
+        for (j = 0; j < COL; j++) {
+            // Store the rotated position of each element in the temporary matrix
+            matrizTemp[j][LIN - 1 - i] = matrizA[i][j];
+        }
+    }
+    // Note: The rotated matrix is stored in matrizTemp,
+    // but not copied back to matrizA here.
+}
+
+// Function to display both the original and rotated matrices
+void mostrarMatriz(int matrizA[LIN][COL]) {
+    int matrizTemp[LIN][COL], i, j;
+
+    // Display the original matrix
+    printf("The first matrix in its original format:\n");
+    for (i = 0; i < LIN; i++) {
+        for (j = 0; j < COL; j++) {
+            printf("%d ", matrizA[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Attempt to overwrite matrizA with matrizTemp (uninitialized here)
+    for (i = 0; i < LIN; i++) {
+        for (j = 0; j < COL; j++) {
+            matrizA[i][j] = matrizTemp[i][j];
+        }
+    }
+
+    // Display what is intended to be the rotated matrix
+    printf("The same matrix rotated 90 degrees:\n");
+    for (i = 0; i < LIN; i++) {
+        for (j = 0; j < COL; j++) {
+            printf("%d ", matrizA[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int matrizA[LIN][COL], i, j;
+
+    // Request user input to fill the matrix
+    for (i = 0; i < LIN; i++) {
+        for (j = 0; j < COL; j++) {
+            printf("Enter the value for row %d, column %d: ", i, j);
+            scanf("%d", &matrizA[i][j]);
+        }
+    }
+
+    // Rotate and display the matrix
+    rotacionarMatriz(matrizA);
+    mostrarMatriz(matrizA);
+
+    return 0;
+}
